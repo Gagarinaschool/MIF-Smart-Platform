@@ -3,109 +3,102 @@
 <html lang="kk">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Онлайн тест</title>
+<title>MIF Online Tests</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
-body{
-    background:#f5f7fa;
-    font-family:Arial;
-}
 
-.container{
-    max-width:900px;
-    margin-top:40px;
+body{
+background:#f5f7fa;
+font-family:Arial;
 }
 
 .card{
-    margin-bottom:20px;
+border:none;
+border-radius:20px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+transition:.3s;
 }
+
+.card:hover{
+transform:translateY(-5px);
+}
+
 </style>
+
 </head>
 
 <body>
 
-<div class="container">
+<div class="container mt-5">
 
-<h1 class="text-center mb-4">📝 Онлайн тесттер</h1>
+<h1 class="text-center mb-5">
+📝 Онлайн тесттер
+</h1>
 
-<div class="card p-4">
+<div class="row">
 
-<h3>🔢 Математика</h3>
+<div class="col-md-4">
 
-<p>1. 2 + 2 = ?</p>
+<div class="card p-4 text-center">
 
-<input type="radio" name="q1" value="3"> 3<br>
-<input type="radio" name="q1" value="4"> 4<br>
-<input type="radio" name="q1" value="5"> 5<br>
+<h1>🔢</h1>
 
-</div>
+<h3>Математика</h3>
 
-<div class="card p-4">
+<a href="math-test.html"
+class="btn btn-primary">
 
-<h3>💻 Информатика</h3>
+Тестті бастау
 
-<p>2. Python бағдарламалау тілі ме?</p>
-
-<input type="radio" name="q2" value="yes"> Иә<br>
-<input type="radio" name="q2" value="no"> Жоқ<br>
-
-</div>
-
-<div class="card p-4">
-
-<h3>⚛️ Физика</h3>
-
-<p>3. Күштің формуласы?</p>
-
-<input type="radio" name="q3" value="F=ma"> F = ma<br>
-<input type="radio" name="q3" value="E=mc2"> E = mc²<br>
-<input type="radio" name="q3" value="P=UI"> P = UI<br>
-
-</div>
-
-<div class="text-center">
-
-<button class="btn btn-success btn-lg"
-onclick="checkTest()">
-
-Тестті тексеру
-
-</button>
-
-</div>
-
-<div class="text-center mt-4">
-
-<h2 id="result"></h2>
+</a>
 
 </div>
 
 </div>
 
-<script>
+<div class="col-md-4">
 
-function checkTest(){
+<div class="card p-4 text-center">
 
-let score = 0;
+<h1>💻</h1>
 
-if(document.querySelector('input[name="q1"]:checked')?.value=="4")
-score++;
+<h3>Информатика</h3>
 
-if(document.querySelector('input[name="q2"]:checked')?.value=="yes")
-score++;
+<a href="informatics-test.html"
+class="btn btn-success">
 
-if(document.querySelector('input[name="q3"]:checked')?.value=="F=ma")
-score++;
+Тестті бастау
 
-document.getElementById("result").innerHTML =
-"Сіздің нәтижеңіз: " + score + " / 3";
+</a>
 
-}
+</div>
 
-</script>
+</div>
+
+<div class="col-md-4">
+
+<div class="card p-4 text-center">
+
+<h1>⚛️</h1>
+
+<h3>Физика</h3>
+
+<a href="physics-test.html"
+class="btn btn-warning">
+
+Тестті бастау
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 </body>
 </html>
