@@ -28,15 +28,15 @@ padding:70px 20px;
 text-align:center;
 }
 
-.hero h1{
-font-size:48px;
-font-weight:bold;
-}
-
 .card{
 border:none;
 border-radius:15px;
 box-shadow:0 2px 12px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .section-title{
@@ -51,10 +51,6 @@ color:white;
 padding:20px;
 text-align:center;
 margin-top:50px;
-}
-
-.btn-lg{
-padding:14px 25px;
 }
 
 </style>
@@ -118,10 +114,10 @@ data-bs-target="#menu">
 
 <section class="hero">
 
-<h1>⚛️ ФИЗИКА</h1>
+<h1>⚛️ Физика бөлімі</h1>
 
 <p>
-Физика • STEM • Виртуалды зертханалар
+Физика • STEM • Зертханалар • Олимпиада
 </p>
 
 </section>
@@ -136,153 +132,93 @@ data-bs-target="#menu">
 <div class="card p-4 text-center">
 <h4>📘 Теория</h4>
 <p>Физика тақырыптары</p>
+<a href="theory.html" class="btn btn-primary">Ашу</a>
 </div>
 </div>
 
 <div class="col-md-3">
 <div class="card p-4 text-center">
-<h4>🧪 Зертханалар</h4>
+<h4>🧪 Зертханалық жұмыс</h4>
 <p>Практикалық жұмыстар</p>
+<a href="lab.html" class="btn btn-success">Ашу</a>
 </div>
 </div>
 
 <div class="col-md-3">
 <div class="card p-4 text-center">
 <h4>📚 Формулалар</h4>
-<p>Анықтамалық</p>
+<p>Формула анықтамалығы</p>
+<a href="formula.html" class="btn btn-warning">Ашу</a>
 </div>
 </div>
 
 <div class="col-md-3">
 <div class="card p-4 text-center">
 <h4>🏆 Олимпиада</h4>
-<p>Есептер банкі</p>
+<p>Физикалық есептер</p>
+<a href="phys-olymp.html" class="btn btn-danger">Ашу</a>
 </div>
 </div>
 
 </div>
 
-<h2 class="section-title">🔬 PhET Виртуалды зертханасы</h2>
+<h2 class="section-title">🌍 Халықаралық зерттеулер</h2>
 
-<div class="card p-5 text-center">
+<div class="row g-4">
 
-<p>
-PhET зертханасында электр тізбектері, механика, толқындар,
-оптика және басқа тәжірибелерді орындауға болады.
-</p>
-
-<div class="row mt-4">
-
-<div class="col-md-4 mb-3">
-
-<a class="btn btn-primary btn-lg w-100"
-href="https://phet.colorado.edu/kk/simulations/filter?subjects=physics"
-target="_blank">
-
-🔬 Барлық зертханалар
-
-</a>
-
+<div class="col-md-4">
+<div class="card p-4 text-center">
+<h4>♿ Инклюзия</h4>
+<p>Инклюзивті білім беру</p>
+<a href="inclusion.html" class="btn btn-primary">Ашу</a>
+</div>
 </div>
 
-<div class="col-md-4 mb-3">
-
-<a class="btn btn-success btn-lg w-100"
-href="https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc_all.html"
-target="_blank">
-
-⚡ Электр тізбегі
-
-</a>
-
+<div class="col-md-4">
+<div class="card p-4 text-center">
+<h4>🌍 PISA</h4>
+<p>PISA халықаралық зерттеуі</p>
+<a href="pisa.html" class="btn btn-success">Ашу</a>
+</div>
 </div>
 
-<div class="col-md-4 mb-3">
-
-<a class="btn btn-warning btn-lg w-100"
-href="https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion_all.html"
-target="_blank">
-
-🚀 Дененің қозғалысы
-
-</a>
-
+<div class="col-md-4">
+<div class="card p-4 text-center">
+<h4>📊 TIMSS</h4>
+<p>TIMSS тапсырмалары</p>
+<a href="timss.html" class="btn btn-warning">Ашу</a>
 </div>
-
-<div class="col-md-6 mb-3">
-
-<a class="btn btn-info btn-lg w-100"
-href="https://phet.colorado.edu/sims/html/wave-on-a-string/latest/wave-on-a-string_all.html"
-target="_blank">
-
-🌊 Толқындар
-
-</a>
-
-</div>
-
-<div class="col-md-6 mb-3">
-
-<a class="btn btn-danger btn-lg w-100"
-href="https://phet.colorado.edu/sims/html/geometric-optics/latest/geometric-optics_all.html"
-target="_blank">
-
-🔭 Геометриялық оптика
-
-</a>
-
 </div>
 
 </div>
 
-</div>
-
-<h2 class="section-title">⚛️ Қосымша зертханалар</h2>
+<h2 class="section-title">🔬 Онлайн зертханалар</h2>
 
 <div class="card p-4 text-center">
+
+<a class="btn btn-primary m-2"
+href="https://phet.colorado.edu"
+target="_blank">
+🔬 PhET
+</a>
 
 <a class="btn btn-success m-2"
 href="https://www.geogebra.org/physics"
 target="_blank">
-
-GeoGebra Physics
-
+⚛️ GeoGebra Physics
 </a>
 
 <a class="btn btn-warning m-2"
 href="https://www.falstad.com"
 target="_blank">
-
-Falstad Simulator
-
+⚡ Falstad
 </a>
 
 <a class="btn btn-danger m-2"
 href="https://www.myphysicslab.com"
 target="_blank">
-
-MyPhysicsLab
-
+🚀 MyPhysicsLab
 </a>
-
-</div>
-
-<h2 class="section-title">📖 Негізгі формулалар</h2>
-
-<div class="card p-4">
-
-<ul>
-
-<li>F = ma</li>
-<li>ρ = m / V</li>
-<li>P = F / S</li>
-<li>A = Fs</li>
-<li>N = A / t</li>
-<li>U = IR</li>
-<li>Q = cmΔt</li>
-<li>E = mc²</li>
-
-</ul>
 
 </div>
 
@@ -291,13 +227,11 @@ MyPhysicsLab
 <div class="card p-4">
 
 <ul>
-
 <li>🔭 Астрономия</li>
 <li>⚡ Электродинамика</li>
 <li>🌊 Толқындар</li>
 <li>☢️ Ядролық физика</li>
 <li>🚀 Ғылыми жобалар</li>
-
 </ul>
 
 </div>
